@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be my mom</title>
+    <link href="index.css" type="text/css" rel="stylesheet" />  
+</head>
+<body>
+    <h1 class="Diana"> <b> <i>Diana</i></b> </h1>
+    <div class="img">
+        <img src="images/catrizzflowers.jpg" class="rizz">     
+    </div>
+    <h1> <b> <i>You have big eyes, small face. I like.</i> </b></h1>
+    <h1> <i id="willyou"> Will you be my Valentine?</i></h2>
+    <div class="img">
+        <img id="crying" src="images/cryingcat.jpeg" class="crying">
+    </div>
+    <div class="buttons">
+        <button onclick="saidYes()" class="yes"> 
+            <h2 id="yesText">Yes</h2>
+        </button>
+        
+        <script>
+        function saidYes() {
+            var randomNum = Math.floor(Math.random() * 3);
+            var array = ["Good job.", "Mom?", "Took too long."];
+            document.getElementById("yesText").innerHTML = array[randomNum];  
+            document.getElementById("willyou").innerHTML = "And you're my date."
+            document.getElementById("crying").src = "images/smiledate.jpg";
+        }
+        </script>
+        
+        <button onclick="doThis()" class="no"> 
+            <h2 id="noText">Eww</h2>
+        </button>
+        
+        <script>
+        function doThis() {
+            var randomNum = Math.floor(Math.random() * 5);
+            var array = ["That's why your mom said no.", "Try again.", "So you're gay.", "Error...Dumbass.", "Misclick, fat fingers."];
+            document.getElementById("noText").innerHTML = array[randomNum];  
+            document.getElementById("willyou").innerHTML = "Are you blind. Click green."
+            document.getElementById("crying").src = "images/cryingcat.jpeg";
+        }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {background-color: pink;}
+h1{color:rgb(59, 10, 59);
+    text-align: center;}
+h2{color:black;}
+
+
+.img{
+    text-align: center;
+}
+.rizz{
+
+}
+.crying{
+    border-radius: 40%;
+}
+.buttons{
+    text-align:center;
+}
+.yes{
+    border-color:black;
+    background-color:rgb(9, 237, 9);
+    text-align: center;
+
+}
+.no{
+    border-color:black;
+    background-color:rgb(237, 9, 9);
+    text-align: center;
+
+}
